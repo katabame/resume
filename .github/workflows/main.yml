@@ -1,7 +1,11 @@
 on:
+  workflow_dispatch:
+    branches:
+      - master
   push:
     paths:
       - 'doc/**'
+      - '.github/workflows/**'
 
 name: CreatePDFs
 
